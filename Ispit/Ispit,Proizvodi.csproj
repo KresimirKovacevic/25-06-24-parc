@@ -43,9 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Polaznik.cs" />
+    <Compile Include="Predavac.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Proizvodi\Polaznik.cs" />
-    <Compile Include="Proizvodi\Predavac.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
