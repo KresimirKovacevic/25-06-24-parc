@@ -1,8 +1,0 @@
-C:\Users\Krešimir\Desktop\ALGEBRA\parcijalni\25-06-24-parc\Ispit\bin\Debug\Ispit.exe.config
-C:\Users\Krešimir\Desktop\ALGEBRA\parcijalni\25-06-24-parc\Ispit\bin\Debug\Ispit.exe
-C:\Users\Krešimir\Desktop\ALGEBRA\parcijalni\25-06-24-parc\Ispit\bin\Debug\Ispit.pdb
-C:\Users\Krešimir\Desktop\ALGEBRA\parcijalni\25-06-24-parc\Ispit\obj\Debug\Ispit.csproj.AssemblyReference.cache
-C:\Users\Krešimir\Desktop\ALGEBRA\parcijalni\25-06-24-parc\Ispit\obj\Debug\Ispit.csproj.SuggestedBindingRedirects.cache
-C:\Users\Krešimir\Desktop\ALGEBRA\parcijalni\25-06-24-parc\Ispit\obj\Debug\Ispit.csproj.CoreCompileInputs.cache
-C:\Users\Krešimir\Desktop\ALGEBRA\parcijalni\25-06-24-parc\Ispit\obj\Debug\Ispit.exe
-C:\Users\Krešimir\Desktop\ALGEBRA\parcijalni\25-06-24-parc\Ispit\obj\Debug\Ispit.pdb
