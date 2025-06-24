@@ -12,25 +12,25 @@ namespace Ispit
         public delegate void PocniPisatiIspit(DateTime vrijeme);    // Nisam mogao dobiti global, ali inace radi
         static void Main(string[] args)
         {
-            Predavac Pale = new Predavac();
-            List<Polaznik> polaznici = new List<Polaznik>();
-            polaznici.Add(new Polaznik("Garry Barret Francois"));
+            Predavac Pale = new Predavac(); // Stvaranje predavaca
+
+            List<Polaznik> polaznici = new List<Polaznik>();    // Lista polaznika za jednostavno rukovanje sa svim polaznicima.
+
+            polaznici.Add(new Polaznik("Garry Barret Francois"));   // Dodavanje polaznika
             polaznici.Add(new Polaznik("Sam Kovacic"));
             polaznici.Add(new Polaznik("Antonio Dill"));
             polaznici.Add(new Polaznik("Johnny Guitar"));
 
-            foreach(Polaznik p in polaznici){
-                p.IspitZavrsen += (o) => Console.WriteLine("Zaprimljen ispit od polaznika: " + o.ImePrezime); 
+            foreach(Polaznik polaznik in polaznici){   // Pretplata za kada polaznik zavrsi ispit
+                polaznik.IspitZavrsen += (osoba) => Console.WriteLine("Zaprimljen ispit od polaznika: " + osoba.ImePrezime); 
             }
 
-            Pale.Ispit += ( dt ) => { polaznici.ForEach(p => { p.OdgovoriNaPitanja(dt); }); };  // Za pristup lokalnim varijablama
+            Pale.Ispit += ( vrijeme ) => { polaznici.ForEach(p => { p.OdgovoriNaPitanja(vrijeme); }); };  // Anonimna metoda za pristup lokalnim varijablama
 
-            Pale.ZvoniZvono();
+            Pale.ZvoniZvono();  // Takodjer naznaci polatnicima do pocnu rjesavati ispit
 
-            //polaznici.ForEach(p => { p.OdgovoriNaPitanja(DateTime.Now); });
-
-            Random rand = new Random();
-            polaznici.ElementAt(rand.Next(0, 4)).PredajOdgovoreNaPitanja();
+            Random rand = new Random(); // Biranje prvog plaznika koji ce predati odgovore na neodredjen nacin
+            polaznici.ElementAt(rand.Next(0, polaznici.Count)).PredajOdgovoreNaPitanja();   // Korist polaznici.Count da se lako mogu dodati/oduzeti polaznici bez potrebe za dodatnom izmjenom koda
         }
     }
 }
