@@ -22,7 +22,7 @@ namespace Ispit
             polaznici.Add(new Polaznik("Johnny Guitar"));
 
             foreach(Polaznik polaznik in polaznici){   // Pretplata za kada polaznik zavrsi ispit
-                polaznik.IspitZavrsen += (osoba) => Console.WriteLine("Zaprimljen ispit od polaznika: " + osoba.ImePrezime); 
+                polaznik.IspitZavrsen += (osoba) => Pale.IspitZaprimljen(polaznik); 
             }
 
             Pale.Ispit += ( vrijeme ) => { polaznici.ForEach(p => { p.OdgovoriNaPitanja(vrijeme); }); };  // Anonimna metoda za pristup lokalnim varijablama
