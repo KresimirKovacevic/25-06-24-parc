@@ -12,5 +12,5 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
-*.vsidx
+*.vs
 *.suo
