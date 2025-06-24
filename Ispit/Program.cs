@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Ispit
 {
+    public delegate void PocniPisatiIspit(DateTime vrijeme);    // Nisam mogao dobiti global, ali inace radi
     public class Program
     {
-        public delegate void PocniPisatiIspit(DateTime vrijeme);    // Nisam mogao dobiti global, ali inace radi
         static void Main(string[] args)
         {
             Predavac Pale = new Predavac(); // Stvaranje predavaca
